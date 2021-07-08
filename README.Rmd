@@ -4,7 +4,14 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  warning=FALSE,
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
 
 Package ggiraphExtra contains many useful functions for exploratory plots. These functions are made by both 'ggplot2' and 'ggiraph' packages. You can make a static ggplot or an interactive ggplot by setting the parameter interactive=TRUE.
 
@@ -12,15 +19,13 @@ Package ggiraphExtra contains many useful functions for exploratory plots. These
 
 You can install package ggiraphExtra from CRAN with the following command.
 
-
-```r
+```{r,warning=FALSE,message=FALSE,eval=FALSE}
 install.packages("ggiraphExtra")
 ```
 
 You can install the latest version of ggiraphExtra from github.
 
-
-```r
+```{r,warning=FALSE,message=FALSE,eval=FALSE}
 #install.packages("devtools")
 devtools::install_github("cardiomoon/ggiraphExtra")
 ```
